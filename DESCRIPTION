@@ -1,0 +1,36 @@
+Package: StoryboardR
+Type: Package
+Title: StoryboardR
+Version: 0.1.0
+Authors@R:
+    c(
+    person(given = "David", 
+           family = "Miller", 
+           email = "dmiller4@mgh.harvard.edu", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = 0000-0001-9736-9119)
+           ),
+    person(given = "Sophia", 
+           family = "Shalhout", 
+           role = c("aut")
+           )
+           )
+Maintainer: David Michael Miller <dmiller4@mgh.harvard.edu>
+Description: This packages creates patient storyboards from a REDCap Data Set.
+License: MIT  
+Encoding: UTF-8
+LazyData: true
+Depends:
+    tidyverse,
+    readxl,
+    readr,
+    lubridate,
+    splitstackshape,
+    scales,
+    knitr,
+    plotly,
+    TimeWarp,
+    shiny,
+    shinydashboard,
+    R (>= 2.10)
+RoxygenNote: 7.1.1
