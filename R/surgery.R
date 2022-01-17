@@ -75,7 +75,7 @@ surgery <- function(data) {
   surgery$hover.b <- paste("<b>Type of Sugery:</b>", surgery$surg_type_1)
   surgery$hover.c <- paste("<b>Surgical Margins:</b>", surgery$margin)
   surgery$hover.d <- paste("<b>Surgical Outcome:</b>", surgery$surg_outcome)
-  surgery$hover.e <- paste("<b>Date:</b>", surgery$lesion_tag_surg)
+  surgery$hover.e <- paste("<b>Date:</b>", surgery$surg_dtc_1)
 
   surgery$hover <- paste(surgery$hover.a,
                          surgery$hover.b,

@@ -39,7 +39,7 @@ systemic_therapy_df <- function(data){
   date.l.dose.m <- date.l.dose.m %>%
     dplyr::arrange(record_id,  value, rx_name)
 
-  date.l.dose.m$value <- lubridate::as_date(date.l.dose.m$value)
+  date.l.dose.m$value <- as.Date.character(date.l.dose.m$value, format = "%m/%d/%y")
 
   ## select the latest SS within each record (i.e. the longest OS)
   date.l.dose.m1 <- date.l.dose.m %>%
@@ -57,8 +57,8 @@ systemic_therapy_df <- function(data){
                        by = c("record_id" = "record_id", "rx_name" = "rx_name"))
 
   ### convert date_last_dose and sat_date_dose_1 to dates
-  syst_tx.1$date_last_dose <- as.Date(syst_tx.1$date_last_dose)
-  syst_tx.1$sat_date_dose_1 <- as.Date(syst_tx.1$sat_date_dose_1)
+  syst_tx.1$date_last_dose <- as.Date(syst_tx.1$date_last_dose, format = "%m/%d/%y")
+  syst_tx.1$sat_date_dose_1 <- as.Date(syst_tx.1$sat_date_dose_1, format = "%m/%d/%y")
 
   ## Create a duration of therapy column
   syst_tx.1$dot <- syst_tx.1$date_last_dose - syst_tx.1$sat_date_dose_1
@@ -75,7 +75,7 @@ systemic_therapy_df <- function(data){
   # Create DF of Best Overall Response
   ##########################################################################################################################
   bor.1 <- dt %>% select(record_id, rx_name, sat_date_dose_1, bor) %>% drop_na(bor)
-  bor.1$sat_date_dose_1 <- as.Date(bor.1$sat_date_dose_1)
+  bor.1$sat_date_dose_1 <- as.Date(bor.1$sat_date_dose_1, format = "%m/%d/%y")
   syst_tx.3 <- left_join(syst_tx.2,
                          bor.1,
                          by = c("record_id","rx_name","sat_date_dose_1"))
