@@ -1,5 +1,5 @@
 
-#' Wrangle Data to Prepare for Storyboards
+#' Wrangle Data to Prepare for StoryboardR
 #'
 #' @return
 #' @export

@@ -1,6 +1,6 @@
 #' Create a plotly interactive timeline of a patient journey from a tumor registry
 #' @description
-#' `storyboard_plot()` takes the aggregated data frames from combine_storyboards_dfs to produce a plotly data visualization of a patient journey
+#' `storyboard_plot()` takes the aggregated data frames from combine_storyboard_dfs to produce a plotly data visualization of a patient journey
 #' @param data is a data frame down stream of combine_storyboard_df and further filtered for a specific record ID of interest
 #' @return A ggplotly Storyboard for a given subject
 #' @export
@@ -20,7 +20,7 @@ storyboard_plot <- function(data){
   ##########################################################################################################################
   # Create the Line Segments that will populate the Storyboard
   ##########################################################################################################################
-  # Each row in the data frame created by `combine_storyboards_dfs` is an event that will  populate the Storyboard. Thus, we
+  # Each row in the data frame created by `combine_storyboard_dfs` is an event that will  populate the Storyboard. Thus, we
   ## need to generate a line segment that will attach that event to the center line of the Storyboard. We need a method that
   ### allows for a different number of line segments that is completely dependent on the number of observations that are found
   #### in each individual patient story

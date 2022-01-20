@@ -1,7 +1,7 @@
 #' Randomly date shift the combined storyboard data frame
 #' @description
 #' `date.shift.df()` shifts the dates a unified random number of weeks either forward or back between 1 and 52
-#' @param data a data frame that is downstream of combine_storyboards_df()
+#' @param data a data frame that is downstream of combine_storyboard_df()
 #' @param date the name of the column with the date intended to be shifted. Defaults to "date".
 #' @return A data frame of shifted dates
 #' @export

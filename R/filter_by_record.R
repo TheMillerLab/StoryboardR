@@ -1,6 +1,6 @@
-#' Filter the storyboards dataframe by the subject of interest
+#' Filter the StoryboardR data frame by the subject of interest
 #' @description
-#' `filter_by_record()` filters the storyboards dataframe by the subject of interest
+#' `filter_by_record()` filters the StoryboardR data frame by the subject of interest
 #' @param data is a data frame of the combined storyboard (e.g. after combine_storyboard_dfs() is called)
 #' @param id is a character vector corresponding to a subject id: e.g. "7612-1"
 #' @return The storyboard data frame filtered by the record of interest
