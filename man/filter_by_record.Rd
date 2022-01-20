@@ -2,7 +2,7 @@
 % Please edit documentation in R/filter_by_record.R
 \name{filter_by_record}
 \alias{filter_by_record}
-\title{Filter the storyboards dataframe by the subject of interest}
+\title{Filter the StoryboardR data frame by the subject of interest}
 \usage{
 filter_by_record(data, id)
 }
@@ -15,7 +15,7 @@ filter_by_record(data, id)
 The storyboard data frame filtered by the record of interest
 }
 \description{
-`filter_by_record()` filters the storyboards dataframe by the subject of interest
+`filter_by_record()` filters the StoryboardR data frame by the subject of interest
 }
 \examples{
 # Test with embedded data set "storyboard_dataset"

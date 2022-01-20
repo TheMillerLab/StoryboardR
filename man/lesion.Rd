@@ -2,7 +2,7 @@
 % Please edit documentation in R/lesion.R
 \name{lesion}
 \alias{lesion}
-\title{Create a dataframe of lesions from a tumor registry that can be combined into a storyboard}
+\title{Create a data frame of lesions from a tumor registry that can be combined into a storyboard}
 \usage{
 lesion(data)
 }
@@ -13,7 +13,7 @@ lesion(data)
 A data frame with five variables ("record_id", "description", "value", "date", and "hover" that can be combined with others dfs with the same five variables to form a storyboard
 }
 \description{
-`lesion()`wrangles data from the Lesion form of tumor registries to produce a dataframe of details about the individual tumors, which can then be incorporated into a Patient Storyboard
+`lesion()`wrangles data from the Lesion form of tumor registries to produce a data frame of details about the individual tumors, which can then be incorporated into a Patient Storyboard
 }
 \examples{
 # Test with embedded data set "storyboard_dataset"

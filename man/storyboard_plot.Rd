@@ -7,17 +7,16 @@
 storyboard_plot(data)
 }
 \arguments{
-\item{data}{is a data frame which contains the data for which you want to create a storyboard}
+\item{data}{is a data frame down stream of combine_storyboard_df and further filtered for a specific record ID of interest}
 }
 \value{
 A ggplotly Storyboard for a given subject
 }
 \description{
-`storyboard_plot()` provides natural language processing tools to abstract data from a variety of genomic reports and import them to REDCap
+`storyboard_plot()` takes the aggregated data frames from combine_storyboard_dfs to produce a plotly data visualization of a patient journey
 }
 \examples{
 # Test with embedded data set "storyboard_dataset"
-storyboard_dataset \%>\%
-  storyboard_plot(id = "Simulated Patient 1")
+StoryboardR::storyboard_dataset \%>\%
 
 }

@@ -7,7 +7,7 @@
 date.shift.df(data)
 }
 \arguments{
-\item{data}{a data frame that is downstream of combine_storyboards_df()}
+\item{data}{a data frame that is downstream of combine_storyboard_df()}
 
 \item{date}{the name of the column with the date intended to be shifted. Defaults to "date".}
 }

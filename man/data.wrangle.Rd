@@ -2,7 +2,7 @@
 % Please edit documentation in R/data.wrangle.R
 \name{data.wrangle}
 \alias{data.wrangle}
-\title{Wrangle Data to Prepare for Storyboards}
+\title{Wrangle Data to Prepare for StoryboardR}
 \usage{
 data.wrangle()
 }
@@ -10,5 +10,5 @@ data.wrangle()
 
 }
 \description{
-Wrangle Data to Prepare for Storyboards
+Wrangle Data to Prepare for StoryboardR
 }
