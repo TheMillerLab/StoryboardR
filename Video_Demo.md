@@ -1,1 +1,1 @@
-To facilitate the installation of this package and shiny application, we have created a Video Demo, that can be accessed here(https://www.dropbox.com/s/hpyii63rutabpvh/StoryboardR%20Video%20Demo.mov?dl=0)
+To facilitate the installation of this package and shiny application, we have created a Video Demo, that can be accessed [here](https://www.dropbox.com/s/hpyii63rutabpvh/StoryboardR%20Video%20Demo.mov?dl=0)
