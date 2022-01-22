@@ -1,8 +1,8 @@
-#' Combine Storyboard dataframes
+#' Combine Storyboard data frames
 #' @description
 #' `combine_storyboard_dfs()` combine the various Storybards DFs
 #' @param data is a data frame which contains the data for which you want to create a storyboard
-#' @return A data frame that has combined the various dataframes of the storyboard package
+#' @return A data frame that has combined the various data frames of the storyboard package
 #' @export
 #' @examples
 #' # Test with embedded data set "storyboard_dataset"
