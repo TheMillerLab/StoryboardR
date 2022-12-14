@@ -6,9 +6,6 @@
 \usage{
 data.wrangle()
 }
-\value{
-
-}
 \description{
 Wrangle Data to Prepare for StoryboardR
 }

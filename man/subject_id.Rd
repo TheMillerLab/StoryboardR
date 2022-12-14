@@ -9,9 +9,6 @@ subject_id(x)
 \arguments{
 \item{x}{A character string of the subject you want to create the storboard for}
 }
-\value{
-
-}
 \description{
 Title
 }

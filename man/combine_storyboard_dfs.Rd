@@ -2,7 +2,7 @@
 % Please edit documentation in R/combine_storyboard_dfs.R
 \name{combine_storyboard_dfs}
 \alias{combine_storyboard_dfs}
-\title{Combine Storyboard dataframes}
+\title{Combine Storyboard data frames}
 \usage{
 combine_storyboard_dfs(data)
 }
@@ -10,7 +10,7 @@ combine_storyboard_dfs(data)
 \item{data}{is a data frame which contains the data for which you want to create a storyboard}
 }
 \value{
-A data frame that has combined the various dataframes of the storyboard package
+A data frame that has combined the various data frames of the storyboard package
 }
 \description{
 `combine_storyboard_dfs()` combine the various Storybards DFs
