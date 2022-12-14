@@ -222,18 +222,24 @@ ss <- function(data){
   ##########################################################################################################################
   # Let's find those WITH duplicates of details
   ##########################################################################################################################
-  ss.trend.details.dupes <- ss.trend.longer.drop.zero %>%
-    janitor::get_dupes(record_id,
-                       ss_dtc,
-                       details)
+ # ss.trend.details.dupes <- ss.trend.longer.drop.zero %>% 
+ #   janitor::get_dupes(record_id,
+ #                      ss_dtc,
+ #                      details)
+ # 
+  ss.trend.details.dupes <- ss.trend.longer.drop.zero %>% group_by(record_id, ss_dtc, details) |> filter(n()>1)
+  
   ##########################################################################################################################
   # Let's find those WITHOUT duplicates of details
   ##########################################################################################################################
-  ss.trend.no.dupes.details <- anti_join(ss.trend.longer.drop.zero,
-                                         ss.trend.details.dupes,
-                                         by = c("record_id",
-                                                "ss_dtc",
-                                                "details"))
+#  ss.trend.no.dupes.details <- ss.trend.longer.drop.zero %>% distinct(record_id, ss_dtc, details, .keep_all = TRUE)
+  
+  ss.trend.no.dupes.details <- ss.trend.longer.drop.zero %>%   
+    anti_join(ss.trend.longer.drop.zero,
+              ss.trend.details.dupes,
+              by = c("record_id",
+                     "ss_dtc",
+                     "details"))
   ##########################################################################################################################
   # Now let's slice the duplicated df to isolate the single instance that we want
   ##########################################################################################################################
@@ -246,8 +252,8 @@ ss <- function(data){
   ##########################################################################################################################
   # remove "-dupe_count" variable
   ##########################################################################################################################
-  ss.trend.details.dupes.slice <- ss.trend.details.dupes.slice %>%
-    select(-dupe_count)
+  ss.trend.details.dupes.slice <- ss.trend.details.dupes.slice # %>%
+  #  select(-dupe_count) don't use if not using janitor
   ##########################################################################################################################
   # Now let's combine these df
   ##########################################################################################################################
