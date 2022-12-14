@@ -31,7 +31,6 @@ Depends:
     plotly,
     shiny,
     shinydashboard,
-    janitor,
     reshape2,
     R (>= 2.10)
 RoxygenNote: 7.1.1
