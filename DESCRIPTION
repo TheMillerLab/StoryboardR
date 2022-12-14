@@ -29,7 +29,6 @@ Depends:
     scales,
     knitr,
     plotly,
-    TimeWarp,
     shiny,
     shinydashboard,
     R (>= 2.10)
