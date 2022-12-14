@@ -31,7 +31,7 @@ date.shift.df <- function(data){
   # Use dateShift function from TimeWarp app to shift the date by the random.integer
   ##########################################################################################################################
   dt.date.shifted <- dt
-  dt.date.shifted$date <- TimeWarp::dateShift(
+  dt.date.shifted$date <- StoryboardR::dateShift(
     x = dt$date,
     by = "weeks",
     k.by = random.integer.week,
